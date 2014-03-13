@@ -70,8 +70,8 @@ var map = L.mapbox.map('map').setView([-5.200364681183476,129.605712890625], 6);
 var ui = document.getElementById('map-ui');
 
 addLayer(L.mapbox.tileLayer('examples.map-zgrqqx0w'), 'Base Map', 1);
-addLayer(L.mapbox.tileLayer('modilabs.heoiidda'), 'Low Demand Scenario', 2);
-addLayer(L.mapbox.tileLayer('modilabs.ftbakyb9'), 'High Demand Scenario ', 3);
+addLayer(L.mapbox.tileLayer('modilabs.heoiidda'), 'Low Demand Scenario', 2).addTo(map);
+addLayer(L.mapbox.tileLayer('modilabs.ftbakyb9'), 'High Demand Scenario ', 3).addTo(map);
 
 function addLayer(layer, name, zIndex) {
     layer
